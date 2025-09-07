@@ -1,0 +1,9 @@
+{
+  "name": "12weekyear",
+  "short_name": "12weekyear",
+  "description": "A social habit tracker for achieving your goals with the 12 Week Year system.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#1c1c1e",
+  "theme_color": "#1c1c1e"
+}

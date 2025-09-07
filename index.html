@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>12weekyear</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="manifest" href="./manifest.json">
     
     <!-- iOS specific tags for a more native feel -->
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -26,9 +26,12 @@
   }
 }
 </script>
+<!-- Load Babel to transpile TSX directly in the browser for deployment without a build step -->
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
 <body>
     <div id="root"></div>
-    <script type="module" src="index.tsx"></script>
+    <!-- Use type="text/babel" for Babel to find and transpile the script -->
+    <script type="text/babel" src="./index.tsx"></script>
 </body>
 </html>
